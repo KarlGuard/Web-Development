@@ -1,0 +1,144 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    margin: 0;
+    color: #f0f0f0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+.navbar {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+}
+
+.logo-image {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+.nav-item {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.intro-section {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #1a1a1a;
+    padding: 30px;
+}
+
+.intro-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.intro-text {
+    max-width: 500px;
+}
+
+.intro-text h1 {
+    color: #ffd700;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    color: #ccc;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.gallery {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #1a1a1a;
+}
+
+.card {
+    background-color: #1c1c1c;
+    border: 2px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    max-width: 260px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ccc;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.footer-section {
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 15px;
+}
+
+.footer-section img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer-text {
+    max-width: 400px;
+    font-size: 0.9em;
+    color: #bbb;
+    line-height: 1.4;
+}
